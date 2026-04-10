@@ -20,8 +20,8 @@ public class WalletServiceApplication {
     public CommandLineRunner initData(WalletRepository repository) {
         return args -> {
             UserAccount testUser = new UserAccount();
-            testUser.setUserName("Dima");
-            testUser.setBalance(new BigDecimal("1000.00"));
+            testUser.setUserName("User");
+            testUser.setBalance(new BigDecimal("100.00"));
             repository.save(testUser);
 
             System.out.println("--- Test user created with ID: " + testUser.getId() + " ---");
